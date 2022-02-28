@@ -22,7 +22,7 @@ function Profile() {
       </div>
       <div className="profile-details">
         <div className="profile-picture">
-          <img src={profilePicture} alt="profile picture" />
+          <img src={profilePicture} alt="" />
         </div>
         <div className="profile-name">
           <h5>John Doe</h5>
@@ -64,9 +64,9 @@ function Profile() {
           </div>
         </div>
         <div className="gallery-images">
-          <img src={imageOne} alt="image" />
-          <img src={imageTwo} alt="image" />
-          <img src={imageThree} alt="image" />
+          <img src={imageOne} alt="" />
+          <img src={imageTwo} alt="" />
+          <img src={imageThree} alt="" />
         </div>
       </div>
     </section>
