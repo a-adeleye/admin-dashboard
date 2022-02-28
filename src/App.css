@@ -9,7 +9,7 @@
 .App {
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 3fr 1.5fr;
+  grid-template-columns: 1fr 3fr 1.4fr;
 }
 
 .navbar {
@@ -18,7 +18,7 @@
   align-items: flex-start;
   justify-content: space-between;
   padding: 2em 0 2em 2em;
-  border: 1px solid #f6f6f6;
+  border: 1px solid #dddddd;
   font-size: 0.9em;
 }
 
@@ -86,5 +86,246 @@ p i {
 }
 
 main {
-  background-color: #fafafa;
+  background-color: #f5f4f4;
+  border: 1px solid #dddddd;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: scroll;
+}
+
+.members {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.member {
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3em;
+  font-size: 0.7em;
+  color: rgb(102, 100, 100);
+}
+
+.member-image {
+  width: 40px;
+  height: 40px;
+}
+
+.member-image img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2em;
+  margin-top: 1em;
+}
+
+.views-card,
+.follows-card,
+.likes-card {
+  height: 60px;
+  border-radius: 8px;
+  padding: 1em;
+  font-size: 0.8em;
+}
+
+.views-card {
+  background: rgb(79, 70, 187);
+  background: linear-gradient(
+    77deg,
+    rgba(79, 70, 187, 1) 70%,
+    rgba(253, 187, 100, 1) 77%
+  );
+}
+
+.follows-card {
+  background: rgb(79, 70, 187);
+  background: linear-gradient(
+    77deg,
+    rgba(79, 70, 187, 1) 70%,
+    rgba(250, 137, 107, 1) 77%
+  );
+}
+
+.likes-card {
+  background: rgb(79, 70, 187);
+  background: linear-gradient(
+    77deg,
+    rgba(79, 70, 187, 1) 70%,
+    rgba(132, 233, 245, 1) 77%
+  );
+}
+
+.grey {
+  color: rgb(206, 206, 206);
+}
+
+.white {
+  color: #ffffff;
+}
+
+.analytics {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  height: 300px;
+  gap: 1em;
+}
+
+.analytics-left {
+  display: grid;
+  grid-template-rows: auto 1fr 1fr;
+  gap: 1em;
+  height: 400px;
+}
+.line-chart {
+  width: 100%;
+}
+
+.line-chart img {
+  width: 100%;
+}
+
+.formation {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  height: 130px;
+  gap: 1em;
+  font-size: 0.7em;
+}
+
+.strange-clouds {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  flex-wrap: wrap;
+  background-color: #f2e8ff;
+  border-radius: 8px;
+  gap: 1em;
+}
+
+.formation-top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.strange-clouds img {
+  width: 80px;
+  border-radius: 8px;
+}
+
+.formation-pause,
+.white-card-button {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.formation-pause {
+  background-color: #52459f;
+}
+
+.white-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1.5em 1em;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 8px;
+  gap: 4em;
+}
+
+.white-card-button {
+  background-color: #83e8f4;
+}
+
+.last-thirty-days {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1em;
+  align-items: center;
+  margin-top: 1em;
+  padding: 1em;
+  height: 82%;
+  border-radius: 8px;
+}
+
+.tiles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  justify-items: flex-start;
+}
+
+.tile {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7em;
+}
+
+.like,
+.views,
+.follows,
+.shares {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: #ffffff;
+}
+
+.like {
+  background-color: #f88669;
+}
+
+.views {
+  background-color: #84e9f5;
+}
+
+.follows {
+  background-color: #ffbc65;
+}
+
+.shares {
+  background-color: #50439e;
+}
+
+.pie-chart {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.9em;
+  box-shadow: 1px 1px 5px 1px rgb(170, 169, 169);
+}
+
+.pie-chart p {
+  font-size: 0.7em;
+  color: rgb(102, 100, 100);
+}
+
+.profile {
+  background-color: black;
 }
