@@ -1,38 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1.5fr;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 2em 0 2em 2em;
+  border: 1px solid #f6f6f6;
+  font-size: 0.9em;
+}
+
+.navbar-profile {
+  display: flex;
+  gap: 0.5em;
+}
+
+.navbar-profile-image {
+  width: 40px;
+  height: 40px;
+  background: rgb(79, 70, 187);
+  background: linear-gradient(
+    77deg,
+    rgba(79, 70, 187, 1) 64%,
+    rgba(253, 187, 100, 1) 64%
+  );
+  border-radius: 8px;
+}
+
+.navbar-profile-text {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.navbar-profile-text p {
+  color: rgb(102, 100, 100);
+  font-size: 0.8em;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  font-family: "Roboto", sans-serif;
+}
+
+.navigation p {
+  cursor: pointer;
+}
+
+.inactive {
+  color: rgb(102, 100, 100);
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 10rem;
+  margin-bottom: 2em;
 }
 
-.App-link {
-  color: #61dafb;
+.top p i {
+  margin-left: 2em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-posts > p {
+  margin-top: 1em;
+  color: rgb(102, 100, 100);
+}
+
+p i {
+  margin-right: 1em;
+}
+
+main {
+  background-color: #fafafa;
 }
