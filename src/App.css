@@ -20,6 +20,7 @@
   padding: 2em 0 2em 2em;
   border: 1px solid #dddddd;
   font-size: 0.9em;
+  height: 100%;
 }
 
 .navbar-profile {
@@ -91,8 +92,15 @@ main {
   padding: 2em;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 1em;
   overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+main::-webkit-scrollbar {
+  display: none;
 }
 
 .members {
@@ -327,5 +335,152 @@ main {
 }
 
 .profile {
-  background-color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 2em;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.profile-top {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9em;
+}
+
+.profile-top p {
+  color: rgb(102, 100, 100);
+  font-size: 0.9em;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.icon {
+  height: 30px;
+  width: 30px;
+  border-radius: 8px;
+  border: 1px solid rgb(211, 211, 211);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+  align-items: center;
+}
+
+.profile-picture {
+  width: 70px;
+  height: 70px;
+}
+
+.profile-picture img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.profile-name {
+  text-align: center;
+}
+
+.profile-name p {
+  font-size: 0.7em;
+  color: rgb(102, 100, 100);
+}
+
+.profile-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2em;
+  justify-items: center;
+}
+
+.profile-stat {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.profile-stat p {
+  font-size: 0.7em;
+  color: rgb(102, 100, 100);
+}
+
+.profile-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
+
+button {
+  cursor: pointer;
+  border-radius: 8px;
+  width: 100px;
+  height: 32px;
+  border: none;
+  font-size: 0.7em;
+}
+
+.primary {
+  background-color: #4f46bb;
+  color: #ffffff;
+}
+
+.secondary {
+  background-color: #ffffff;
+  border: 1px solid #4f46bb;
+}
+
+.gallery {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  gap: 1em;
+}
+
+.gallery-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.7em;
+}
+
+.gallery-buttons p {
+  font-size: 0.7em;
+}
+
+.gallery-buttons i {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+.videos,
+.photos {
+  border-radius: 12px;
+  padding: 1em;
+}
+
+.videos {
+  background-color: #f2e8ff;
+  color: #53469e;
+}
+
+.photos {
+  background-color: #fef3f1;
+  color: #af6d5c;
+}
+
+.gallery-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.gallery-images img {
+  width: 100%;
 }

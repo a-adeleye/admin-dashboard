@@ -153,7 +153,6 @@ function Main() {
           </div>
         </div>
       </div>
-      <div className="statistics"></div>
     </main>
   );
 }
