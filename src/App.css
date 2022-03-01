@@ -102,19 +102,13 @@ p i {
 
 main {
   background-color: #f5f4f4;
-  border: 1px solid #dddddd;
+  border-left: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
   padding: 2em;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   gap: 1em;
-  overflow-y: scroll;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-main::-webkit-scrollbar {
-  display: none;
 }
 
 .members {
@@ -203,13 +197,15 @@ main::-webkit-scrollbar {
 }
 
 .analytics-left {
-  display: grid;
-  grid-template-rows: auto 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  height: 300px;
   gap: 1em;
-  height: 400px;
 }
+
 .line-chart {
   width: 100%;
+  height: 50%;
 }
 
 .line-chart img {
@@ -217,11 +213,12 @@ main::-webkit-scrollbar {
 }
 
 .formation {
+  height: 50%;
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
-  height: 130px;
   gap: 1em;
   font-size: 0.7em;
+  margin-top: 0.5em;
 }
 
 .strange-clouds {
@@ -232,6 +229,7 @@ main::-webkit-scrollbar {
   background-color: #f2e8ff;
   border-radius: 8px;
   gap: 1em;
+  height: 135px;
 }
 
 .formation-top {
@@ -253,6 +251,7 @@ main::-webkit-scrollbar {
   align-items: center;
   justify-content: center;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .formation-pause {
@@ -269,6 +268,7 @@ main::-webkit-scrollbar {
   background-color: #ffffff;
   border-radius: 8px;
   gap: 4em;
+  height: 135px;
 }
 
 .white-card-button {
@@ -284,7 +284,7 @@ main::-webkit-scrollbar {
   align-items: center;
   margin-top: 1em;
   padding: 1em;
-  height: 82%;
+  height: 300px;
   border-radius: 8px;
 }
 
@@ -382,6 +382,7 @@ main::-webkit-scrollbar {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .profile-details {
@@ -478,6 +479,7 @@ button {
 .photos {
   border-radius: 12px;
   padding: 1em;
+  cursor: pointer;
 }
 
 .videos {
@@ -497,4 +499,76 @@ button {
 
 .gallery-images img {
   width: 100%;
+}
+
+.bottom-nav {
+  display: none;
+}
+
+.bottom-nav i {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1038px) {
+  .App {
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+
+  .analytics {
+    margin-bottom: 6em;
+  }
+
+  .formation {
+    width: 100%;
+  }
+
+  .last-thirty-days {
+    height: 307px;
+  }
+
+  .profile {
+    height: 420px;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    background-color: #ffffff;
+  }
+
+  main {
+    margin-top: 1em;
+  }
+}
+
+@media only screen and (max-width: 896px) {
+  main {
+    padding-bottom: 1em;
+  }
+}
+
+@media only screen and (max-width: 556px) {
+  .analytics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3em;
+    height: auto;
+  }
+
+  .analytics-right {
+    width: 100%;
+  }
 }
