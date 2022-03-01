@@ -572,3 +572,17 @@ button {
     width: 100%;
   }
 }
+
+@media only screen and (min-width: 1380px) {
+  .analytics-left {
+    height: 500px;
+  }
+
+  .formation {
+    width: 100%;
+  }
+
+  .last-thirty-days {
+    height: 406px;
+  }
+}
