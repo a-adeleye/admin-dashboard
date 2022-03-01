@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/admin-dashboard/static/css/main.e7a2abed.css",
+    "main.js": "/admin-dashboard/static/js/main.2277462b.js",
+    "static/js/787.2b8f7fac.chunk.js": "/admin-dashboard/static/js/787.2b8f7fac.chunk.js",
+    "static/media/Stefan.jpg": "/admin-dashboard/static/media/Stefan.3e1470b5f19d802b819c.jpg",
+    "static/media/img-2.jpg": "/admin-dashboard/static/media/img-2.be6c7872512cc57faa5d.jpg",
+    "static/media/img-3.jpg": "/admin-dashboard/static/media/img-3.b15d3f622f2b4ad2f34b.jpg",
+    "static/media/profile-picture.jpg": "/admin-dashboard/static/media/profile-picture.59cb5a5920e210565729.jpg",
+    "static/media/Rose.jpg": "/admin-dashboard/static/media/Rose.ff9169d085adf7f40154.jpg",
+    "static/media/Mickey.jpg": "/admin-dashboard/static/media/Mickey.dd74e71ccd720cffcb8b.jpg",
+    "static/media/Adam.jpg": "/admin-dashboard/static/media/Adam.c6965f258a4c56984d56.jpg",
+    "static/media/David.jpg": "/admin-dashboard/static/media/David.92a00b2e923d127aa975.jpg",
+    "static/media/img-1.jpg": "/admin-dashboard/static/media/img-1.aacebc9ee22fa916f889.jpg",
+    "static/media/line-chart.jpg": "/admin-dashboard/static/media/line-chart.242cd5e250ef856ab8df.jpg",
+    "static/media/Eve.jpg": "/admin-dashboard/static/media/Eve.df2e220d39a897a2135f.jpg",
+    "static/media/Julia.jpg": "/admin-dashboard/static/media/Julia.168eecfd6754bf170b27.jpg",
+    "static/media/Angela.jpg": "/admin-dashboard/static/media/Angela.698fef0054bdfc4ac8fe.jpg",
+    "static/media/cloud.jpg": "/admin-dashboard/static/media/cloud.d4c9ba327ad8116a60db.jpg",
+    "index.html": "/admin-dashboard/index.html",
+    "main.e7a2abed.css.map": "/admin-dashboard/static/css/main.e7a2abed.css.map",
+    "main.2277462b.js.map": "/admin-dashboard/static/js/main.2277462b.js.map",
+    "787.2b8f7fac.chunk.js.map": "/admin-dashboard/static/js/787.2b8f7fac.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e7a2abed.css",
+    "static/js/main.2277462b.js"
+  ]
+}
